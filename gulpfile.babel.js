@@ -11,8 +11,7 @@ import babel from 'gulp-babel';
 const paths = {
   jsSource: ['./public/*.js'],
   sassSource: ['./public/*.scss'],
-  serverSource: ['./server/*.js'],
-  paths: [ path.join(__dirname, 'styles') ]
+  serverSource: ['./server/*.js']
 };
 const sassOptions = {
   errLogToConsole: true,
@@ -38,7 +37,7 @@ gulp.task('server', () => {
   .pipe(babel({
     presets: ["es2015"]
   }))
-  .pipe(gulp.dest('./server'));
+  .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('sass', () => {
