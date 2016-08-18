@@ -9,7 +9,7 @@ import path from 'path';
 import babel from 'gulp-babel';
 
 const paths = {
-  jsSource: ['./public/*.js'],
+  jsSource: ['./public/*.js', '!./public/bundle.js'],
   sassSource: ['./public/*.scss'],
   serverSource: ['./server/*.js']
 };
