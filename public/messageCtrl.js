@@ -17,7 +17,6 @@ angular.module('emailApp')
 
 
   $scope.sendText = (number, message) => {
-    console.log(number);
       let newMessage = {
           to: [number],
           from: "+18013969302",
