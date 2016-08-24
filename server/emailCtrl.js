@@ -2,12 +2,12 @@ import nodemailer from 'nodemailer';
 import config from './config.js';
 
 
-var EMAIL_ACCOUNT_USER = config.emailAccountUser;
-var EMAIL_ACCOUNT_PASSWORD = config.emailPassword;
-var YOUR_NAME = config.emailName;
+let EMAIL_ACCOUNT_USER = config.emailAccountUser;
+let EMAIL_ACCOUNT_PASSWORD = config.emailPassword;
+let YOUR_NAME = config.emailName;
 
 
-var smtpTransport = nodemailer.createTransport("SMTP",{
+let smtpTransport = nodemailer.createTransport("SMTP",{
   service: "Gmail",  // sets automatically host, port and connection security settings
   auth: {
     user: EMAIL_ACCOUNT_USER,
